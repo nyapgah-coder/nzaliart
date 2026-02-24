@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art by Nzali</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --white: #e09494;
+    --black: #111111;
+    --accent: #b11226;
+    --grey: #530909;
+    --text: #070404;
+}
+
+* { margin:0; padding:0; box-sizing: border-box; }
+
+body {
+    font-family:'Inter', sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background: var(--white);
+    padding: 15px 10%;
+    border-bottom: 1px solid #eee;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+header {
+    height: 90vh;
+    background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    color: var(--black);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+}
+
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+    background: var(--grey);
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    transition: transform .4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card .info {
+    position:absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    color: white;
+    padding: 12px;
+    text-align:center;
+    opacity: 0;
+    transition: .3s;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+.newsletter input[type="email"] {
+    padding: 12px;
+    width: 60%;
+    border:1px solid #ccc;
+}
+
+.newsletter button {
+    padding: 12px 24px;
+    background: var(--accent);
+    color: white;
+    border:none;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--grey);
+    font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+    header h1 { font-size: 2.8rem; }
+}
+.socials { 
+
+    margin-top: 20px; 
+
+} 
+
+  
+
+.socials a { 
+
+    margin: 0 10px; 
+
+    text-decoration: none; 
+
+    color: #111; 
+
+    font-weight: 700; 
+
+} 
+
+  
+
+.socials a:hover { 
+
+    color: #b11226; 
+
+} 
+.buy-btn { 
+
+    margin-top: 10px; 
+
+    padding: 10px 20px; 
+
+    background: #b11226; 
+
+    color: white; 
+
+    border: none; 
+
+    cursor: pointer; 
+
+    font-weight: 500; 
+
+} 
+
+  
+
+.buy-btn:hover { 
+
+    opacity: 0.85; 
+
+} 
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h3>ART BY NZALI</h3>
+    <div>
+        <a href="#gallery">Gallery</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header>
+    <h1>Bold in the Moment — Original Art</h1>
+</header>
+
+<section id="gallery">
+    <h2>Available Originals</h2>
+    <div class="grid">
+<div class="card"> 
+
+<img src="images/Unspoken Fire.jpeg" alt="Unspoken Fire"> 
+
+<div class="info"> 
+
+<h3>Unspoken Fire </h3> 
+
+<p>Acrylic on Canvas • 2026 • KES 15,000</p> 
+
+ 
+
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – Unspoken Fire&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'Unspoken Fire'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+
+<button class="buy-btn">Collect This Work</button> 
+
+</a> 
+
+</div> 
+
+</div> 
+<div class="card"> 
+
+<img src="images/The Pulse.jpeg" alt="The Pulse"> 
+
+<div class="info"> 
+
+<h3>The Pulse </h3> 
+
+<p>Acrylic on Canvas • 2026 • KES 15,000</p> 
+
+ 
+
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – The Pulse&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'The Pulse'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+
+<button class="buy-btn">Collect This Work</button> 
+
+</a> 
+
+</div> 
+
+</div> 
+<div class="card"> 
+
+<img src="images/The Surrender.jpeg" alt="The Surrender"> 
+
+<div class="info"> 
+
+<h3>The Surrender </h3> 
+
+<p>Acrylic on Canvas • 2026 • KES 16,000</p> 
+
+ 
+
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – The Surrender&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'The Surrender'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+
+<button class="buy-btn">Collect This Work</button> 
+
+</a> 
+
+</div> 
+
+</div> 
+<div class="card"> 
+
+<img src="images/The Yield.jpeg" alt="Yield"> 
+
+<div class="info"> 
+
+<h3>The Yield </h3> 
+
+<p>Acrylic on Canvas • 2026 • KES 10,000</p> 
+
+ 
+
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – The Yield&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'The Yield'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+
+<button class="buy-btn">Collect This Work</button> 
+
+</a> 
+
+</div> 
+
+</div> 
+<div class="card"> 
+
+<img src="images/Purple Haze.jpeg" alt="Yield"> 
+
+<div class="info"> 
+
+<h3>Purple Haze </h3> 
+
+<p>Acrylic on Canvas • 2026 • KES 10,000</p> 
+
+ 
+
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – Purple Haze&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'Purple Haze'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+
+<button class="buy-btn">Collect This Work</button> 
+
+</a> 
+
+</div> 
+
+</div> 
+
+
+<div class="card"> 
+<img src="images/Missy.jpeg" alt="Missy"> 
+<div class="info"> 
+<h3>Missy 
+</h3> 
+<p>Acrylic on Canvas • 2026 • KES 17,000</p> 
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – Missy&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'Missy'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+<button class="buy-btn">Collect This Work</button> 
+</a> 
+</div> 
+</div> 
+
+<div class="card">
+<img src="images/Body In Bloom.jpeg" alt="Body In Bloom"> 
+<div class="info"> 
+<h3>Body In Bloom  </h3> 
+<p>Acrylic on Canvas • 2026 • KES 15,000</p> 
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – Body In Bloom&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'Body In Bloom'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+<button class="buy-btn">Collect This Work</button> 
+</a> 
+</div> 
+</div>
+
+<div class="card"> 
+
+<img src="images/Heart Strings.jpeg" alt="Heart Strings"> 
+
+<div class="info"> 
+
+<h3>Heart Strings  </h3> 
+
+<p>Acrylic on Canvas • 2026 • KES 16,000</p> 
+
+ 
+
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – Heart Strings&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'Heart Strings'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+
+<button class="buy-btn">Collect This Work</button> 
+
+</a> 
+
+</div> 
+
+</div> 
+
+<div class="card"> 
+
+<img src="images/The Unveiling.jpeg" alt="Unveiling"> 
+
+<div class="info"> 
+
+<h3>The Unveiling </h3> 
+
+<p>Acrylic on Canvas • 2026 • KES 19,000</p> 
+
+ 
+
+<a href="mailto:nzalimuindi@gmail.com?subject=Purchase Inquiry – The Unveiling&body=Hello Nzali,%0D%0A%0D%0AI would like to purchase 'The Unveiling'.%0D%0APlease share payment details and delivery information.%0D%0A%0D%0AThank you."> 
+
+<button class="buy-btn">Collect This Work</button> 
+
+</a> 
+
+</div> 
+
+</div> 
+</section>
+
+<section id="about">
+    <h2>About the Artist</h2>
+    <p style="max-width:700px; margin:auto; text-align:center;">
+        Nzali creates original works rooted in instinct and presence — every piece
+        comes from the moment of creation. Bold color, narrative, and emotion
+        define the work, inviting viewers to experience intensity and connection.
+    </p>
+</section>
+
+<section class="newsletter">
+    <h2>Subscribe for New Collections</h2>
+    <div style="text-align:center;">
+        <input type="email" placeholder="Your Message">
+        <button>Send</button>
+    </div>
+<section id="contact"> 
+
+    <h2>Contact </h2> 
+
+    <p>Email: nzalimuindi@gmail.com</p> 
+
+    <p>Phone / WhatsApp: +254 746977348</p> 
+
+    <p>Studio Location: Nairobi, Kenya</p> 
+
+</section>
+
+<footer>
+    © 2026 Nzali — All Rights Reserved.  
+     <div class="socials"> 
+
+    <a href="https://instagram.com/nzali" target="_blank">Instagram</a> 
+
+    <a href="https://www.pinterest.com/nzalimuindi" target="_blank">Pinterest</a> 
+
+    <a href="https://tiktok.com/@nzali" target="_blank">TikTok</a> 
+
+    <a href="https://youtube.com/@nzalimuindi" target="_blank">YouTube</a> 
+
+</div> 
+</footer>
+
+</body>
+</html>
